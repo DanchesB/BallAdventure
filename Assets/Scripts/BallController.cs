@@ -7,8 +7,8 @@ public class BallController : MonoBehaviour
     [SerializeField] private float ballSpeed = 30f;
     [SerializeField] private float jumpPower = 10f;
 
+    private bool isGrounded = false;
     private Rigidbody rb;
-    Vector3 rotateDirection;
 
     private void Awake()
     {
@@ -20,9 +20,21 @@ public class BallController : MonoBehaviour
         Movement();
     }
 
-    private void Jump()
+    private void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (isGrounded == true)
+            {
+                Jump(jumpPower);
+            }
+        }
+    }
+
+    public void Jump(float jumpPower)
+    {
+        rb.velocity = new Vector3(rb.velocity.x, jumpPower, rb.velocity.z);
+        isGrounded = false;
     }
 
     private void Movement()
@@ -62,4 +74,15 @@ public class BallController : MonoBehaviour
         rb.AddTorque(Vector3.right * xRotation);
         rb.AddTorque(Vector3.forward * zRotation);
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        isGrounded = true;
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        isGrounded = false;
+    }
+
 }
