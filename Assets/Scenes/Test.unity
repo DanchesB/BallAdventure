@@ -4506,14 +4506,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8826802042820732144, guid: f641afe2c054843488b8875c078b5c8f, type: 3}
-      propertyPath: ballSpeed
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 8826802042820732144, guid: f641afe2c054843488b8875c078b5c8f, type: 3}
-      propertyPath: jumpPower
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 8826802042820732145, guid: f641afe2c054843488b8875c078b5c8f, type: 3}
       propertyPath: m_RootOrder
       value: 3
