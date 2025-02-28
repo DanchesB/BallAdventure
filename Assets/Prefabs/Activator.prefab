@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1363243924396649658}
   - component: {fileID: 6256574760860797356}
   - component: {fileID: 7126824778784805681}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1699,7 +1699,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6973120715088892085}
   - component: {fileID: 8011315747703057507}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Activator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1755,7 +1755,7 @@ GameObject:
   - component: {fileID: 2029207226104154610}
   - component: {fileID: 2035614378137880255}
   - component: {fileID: 3558771577455317923}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}

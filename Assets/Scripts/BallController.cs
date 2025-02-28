@@ -77,12 +77,18 @@ public class BallController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        isGrounded = true;
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        {
+            isGrounded = true;
+        }
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        isGrounded = false;
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        {
+            isGrounded = false;
+        }
     }
 
 }
